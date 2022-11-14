@@ -16,7 +16,7 @@ import java.lang.reflect.Type
  * @param dstClz 用于表示搜索结束，一般为泛型声明类本身
  * @return 返回搜索到的类型
  */
-fun <T> Class<T>.findParameterizedType(target: Class<*>, dstClz: Class<*>): Type? {
+internal fun <T> Class<T>.findParameterizedType(target: Class<*>, dstClz: Class<*>): Type? {
     var clz: Class<*> = this
     var rs: Type? = null
     while (true) {

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import com.anqile.helmet.base.ui.view.recv.RecvItem
 import com.wastrel.recv.BaseRecvAdapter
-import com.wastrel.recv.SimpleSpanSizeLookup
+import com.wastrel.recv.layout.HybridGridLayoutManager
 import com.wastrel.recv.test.recv.ImageItem
 import com.wastrel.recv.test.recv.TextItem
 
@@ -38,8 +38,7 @@ class RecvActivity : AppCompatActivity() {
             recv.layoutManager = LinearLayoutManager(this)
             adapter.setNewData(buildMultiItem())
         } else if (type == "grid") {
-            val value = GridLayoutManager(this, 4)
-            value.spanSizeLookup = SimpleSpanSizeLookup(adapter)
+            val value = HybridGridLayoutManager(adapter, this, 4)
             recv.layoutManager = value
             adapter.setNewData(buildGrid())
         }

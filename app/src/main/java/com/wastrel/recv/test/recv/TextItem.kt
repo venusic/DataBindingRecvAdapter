@@ -10,7 +10,7 @@ import com.wastrel.recv.test.databinding.ItemTextBinding
  */
 class TextItem(val i: Int) : RecvItem<ItemTextBinding> {
     override val spanSize: Int
-        get() = 4
+        get() = 1
 
     override fun bindData(adapter: BaseRecvAdapter, viewBinding: ItemTextBinding, position: Int) {
         viewBinding.tvName.text = "第${i}个Item"
