@@ -1,4 +1,4 @@
-package com.anqile.helmet.base.ui.view.recv
+package com.wastrel.recv.item
 
 import android.graphics.Color
 import android.view.ViewGroup

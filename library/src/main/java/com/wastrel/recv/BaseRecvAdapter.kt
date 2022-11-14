@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
 import androidx.viewbinding.ViewBinding
-import com.anqile.helmet.base.ui.view.recv.RecvItem
+import com.wastrel.recv.item.RecvItem
 import java.lang.reflect.Method
 
 open class BaseRecvAdapter(
