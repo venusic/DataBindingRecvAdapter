@@ -2,12 +2,11 @@ package com.wastrel.recv.test
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.anqile.helmet.base.ui.view.recv.RecvItem
 import com.wastrel.recv.BaseRecvAdapter
+import com.wastrel.recv.item.RecvItem
 import com.wastrel.recv.layout.HybridGridLayoutManager
 import com.wastrel.recv.test.recv.ImageItem
 import com.wastrel.recv.test.recv.TextItem

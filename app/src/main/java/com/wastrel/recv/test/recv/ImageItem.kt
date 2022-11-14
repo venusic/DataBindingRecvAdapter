@@ -1,7 +1,7 @@
 package com.wastrel.recv.test.recv
 
-import com.anqile.helmet.base.ui.view.recv.RecvItem
 import com.wastrel.recv.BaseRecvAdapter
+import com.wastrel.recv.item.RecvItem
 import com.wastrel.recv.test.databinding.ItemImageBinding
 
 /**
