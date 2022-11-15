@@ -11,7 +11,7 @@ import com.wastrel.recv.item.RecvItem
 import java.lang.reflect.Method
 
 open class BaseRecvAdapter(
-    private val data: MutableList<RecvItem<out ViewBinding>>,
+    val data: MutableList<RecvItem<out ViewBinding>>,
     private val supportsChangeAnimations: Boolean = false
 ) :
     RecyclerView.Adapter<BaseRecvAdapter.ViewHolder>() {
@@ -91,9 +91,6 @@ open class BaseRecvAdapter(
         notifyItemRangeInserted(data.size - items.size, items.size)
     }
 
-    fun getData(): List<RecvItem<out ViewBinding>> {
-        return data
-    }
 
     fun getItem(position: Int) = data[position]
 
